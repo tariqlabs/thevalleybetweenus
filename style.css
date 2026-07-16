@@ -84,6 +84,7 @@ img {
 .hero {
   position: relative;
   height: 100vh;
+  height: 100svh;
   min-height: 700px;
   display: flex;
   flex-direction: column;
@@ -624,5 +625,9 @@ img {
 
   .synopsis-lead {
     font-size: 1.3rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 }
