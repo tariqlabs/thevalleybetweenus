@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Valley Between Us | Press Kit</title>
+
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ---------------------------------------
+       The Valley Between Us. Press Kit PDF.
+       Print-optimized for A4 / Letter export.
+       --------------------------------------- */
+
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #6b6b6b;
+      --accent: #8a7d5e;
+      --border: rgba(0, 0, 0, 0.1);
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Print page dimensions. Letter/A4. */
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      padding: 0.75in 0.9in;
+      background: var(--bg);
+      page-break-after: always;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page:last-child {
+      page-break-after: auto;
+    }
+
+    /* Screen mode: show pages stacked with subtle shadow. */
+    @media screen {
+      body {
+        background: #e0dfd9;
+        padding: 40px 20px;
+      }
+      .page {
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        margin-bottom: 40px;
+      }
+    }
+
+    /* Print mode: clean pagination, no background. */
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        padding: 0.6in 0.75in;
+      }
+    }
+
+    @page {
+      size: letter;
+      margin: 0;
+    }
+
+    /* ---------- SHARED ---------- */
+
+    .kicker {
+      font-family: var(--font-sans);
+      font-size: 9pt;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--accent);
+      margin: 20px 0;
+    }
+
+    /* ---------- PAGE 1: COVER ---------- */
+
+    .cover {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #0e1114;
+      color: #e8e6e1;
+    }
+
+    .cover-kicker {
+      font-family: var(--font-sans);
+      font-size: 10pt;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: rgba(232, 230, 225, 0.55);
+      margin-bottom: 40px;
+    }
+
+    .cover-title {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      color: #e8e6e1;
+      letter-spacing: 0.05em;
+      line-height: 0.95;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15em;
+      margin-bottom: 40px;
+    }
+
+    .cover-title .word-sm {
+      font-size: 24pt;
+      color: rgba(232, 230, 225, 0.55);
+    }
+
+    .cover-title .word-lg {
+      font-size: 72pt;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    .cover-title .word-md {
+      font-size: 32pt;
+      letter-spacing: 0.15em;
+    }
+
+    .cover-tagline {
+      font-family: var(--font-sans);
+      font-size: 10pt;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #c5bfae;
+      margin-bottom: 60px;
+    }
+
+    .cover-meta {
+      font-family: var(--font-sans);
+      font-size: 9pt;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(232, 230, 225, 0.55);
+      position: absolute;
+      bottom: 0.75in;
+      left: 0;
+      right: 0;
+    }
+
+    .cover-meta p {
+      margin: 0.3em 0;
+    }
+
+    /* ---------- STANDARD PAGE HEADER ---------- */
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    .page-header .film-name {
+      font-family: var(--font-serif);
+      font-size: 13pt;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .page-header .page-label {
+      font-family: var(--font-sans);
+      font-size: 8pt;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ---------- CONTENT ---------- */
+
+    h2.section-title {
+      font-family: var(--font-serif);
+      font-size: 26pt;
+      font-weight: 400;
+      margin-bottom: 8px;
+      letter-spacing: 0.01em;
+    }
+
+    .section-kicker {
+      font-family: var(--font-sans);
+      font-size: 8pt;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 10.5pt;
+      line-height: 1.65;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    p em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    /* ---------- SYNOPSIS PAGE ---------- */
+
+    .synopsis-lead {
+      font-family: var(--font-serif);
+      font-size: 16pt;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--text);
+      margin-bottom: 24px;
+      letter-spacing: 0.005em;
+    }
+
+    /* ---------- INFO TABLE ---------- */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 60px;
+      margin-top: 20px;
+    }
+
+    .info-row {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .info-row dt {
+      font-size: 8pt;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .info-row dd {
+      font-family: var(--font-serif);
+      font-size: 13pt;
+      font-weight: 400;
+    }
+
+    /* ---------- CREDITS ---------- */
+
+    .credits-list {
+      max-width: 420px;
+      margin: 20px 0;
+    }
+
+    .credits-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: baseline;
+    }
+
+    .credits-row:last-child {
+      border-bottom: none;
+    }
+
+    .credits-row dt {
+      font-size: 8pt;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .credits-row dd {
+      font-family: var(--font-serif);
+      font-size: 12pt;
+      font-weight: 400;
+    }
+
+    /* ---------- DIRECTOR ---------- */
+
+    .director-container {
+      display: grid;
+      grid-template-columns: 1fr 1.8fr;
+      gap: 40px;
+      margin-top: 10px;
+    }
+
+    .director-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+    }
+
+    .director-name {
+      font-family: var(--font-serif);
+      font-size: 22pt;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+
+    .director-role {
+      font-size: 8pt;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    /* ---------- STILLS ---------- */
+
+    .stills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .stills-grid img {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+    }
+
+    /* ---------- CONTACT PAGE ---------- */
+
+    .contact-block {
+      margin-top: 20px;
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-block .kicker {
+      margin-bottom: 12px;
+    }
+
+    .contact-block .email {
+      font-family: var(--font-serif);
+      font-size: 20pt;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .contact-links {
+      margin-top: 30px;
+      font-size: 10pt;
+      line-height: 2;
+      color: var(--text-muted);
+    }
+
+    .contact-links a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .page-footer {
+      margin-top: auto;
+      padding-top: 30px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-sans);
+      font-size: 7.5pt;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* ---------- PRINT INSTRUCTION ---------- */
+
+    .print-hint {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--text);
+      color: white;
+      padding: 12px 20px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      z-index: 1000;
+      cursor: pointer;
+    }
+
+    .print-hint:hover {
+      background: var(--accent);
+    }
+
+    @media print {
+      .print-hint {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <button class="print-hint" onclick="window.print()">Export as PDF</button>
+
+  <!-- ============ PAGE 1: COVER ============ -->
+  <div class="page cover">
+    <p class="cover-kicker">A Documentary</p>
+
+    <h1 class="cover-title">
+      <span class="word-sm">The</span>
+      <span class="word-lg">Valley</span>
+      <span class="word-md">Between Us</span>
+    </h1>
+
+    <p class="cover-tagline">Five Founders.&nbsp;&nbsp;Eight Weeks.&nbsp;&nbsp;One Ecosystem.</p>
+
+    <div class="cover-meta">
+      <p>Directed by Tariq Elouzeh</p>
+      <p>Press Kit &nbsp;&middot;&nbsp; 2026</p>
+    </div>
+  </div>
+
+  <!-- ============ PAGE 2: SYNOPSIS + INFO ============ -->
+  <div class="page">
+    <div class="page-header">
+      <span class="film-name">The Valley Between Us</span>
+      <span class="page-label">Press Kit</span>
+    </div>
+
+    <p class="section-kicker">Synopsis</p>
+    <h2 class="section-title">The Film</h2>
+
+    <div class="divider"></div>
+
+    <p class="synopsis-lead">
+      Five founding teams from across the Middle East and North Africa flew to San Francisco for an eight-week residency at Kernel Camp, a program run by Propeller, a venture fund embedded in the region.
+    </p>
+
+    <p>
+      None of them left the way they arrived. <em>The Valley Between Us</em> follows their transformation through the deep end of Silicon Valley. The pivots, the sacrifices, the family they built inside one house. It is a film about ambition crossing borders, and what happens when talent from an underrepresented region is placed on the world's most competitive stage.
+    </p>
+
+    <div style="margin-top: 40px;">
+      <p class="section-kicker">Film Info</p>
+
+      <dl class="info-grid">
+        <div class="info-row">
+          <dt>Runtime</dt>
+          <dd>35 minutes</dd>
+        </div>
+        <div class="info-row">
+          <dt>Language</dt>
+          <dd>Arabic, English</dd>
+        </div>
+        <div class="info-row">
+          <dt>Country</dt>
+          <dd>United States, MENA</dd>
+        </div>
+        <div class="info-row">
+          <dt>Year</dt>
+          <dd>2026</dd>
+        </div>
+        <div class="info-row">
+          <dt>Format</dt>
+          <dd>Digital, 1080p / 4K</dd>
+        </div>
+        <div class="info-row">
+          <dt>Aspect Ratio</dt>
+          <dd>16:9</dd>
+        </div>
+        <div class="info-row">
+          <dt>Shooting Format</dt>
+          <dd>50mm, 24mm</dd>
+        </div>
+        <div class="info-row">
+          <dt>Subtitles</dt>
+          <dd>English</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="page-footer">
+      <span>The Valley Between Us</span>
+      <span>Page 2</span>
+    </div>
+  </div>
+
+  <!-- ============ PAGE 3: DIRECTOR ============ -->
+  <div class="page">
+    <div class="page-header">
+      <span class="film-name">The Valley Between Us</span>
+      <span class="page-label">Press Kit</span>
+    </div>
+
+    <p class="section-kicker">Director</p>
+    <h2 class="section-title">Tariq Elouzeh</h2>
+
+    <div class="divider"></div>
+
+    <div class="director-container">
+      <img src="../images/tariq.png" alt="Tariq Elouzeh" class="director-photo" />
+
+      <div>
+        <p class="director-role">Director &nbsp;&middot;&nbsp; Producer &nbsp;&middot;&nbsp; Editor</p>
+        <p>
+          Tariq Elouzeh is a filmmaker documenting the people and stories at the edges of ambition. <em>The Valley Between Us</em> is his portrait of a generation of founders from the MENA region stepping onto the global stage, told from inside their eight-week crossing.
+        </p>
+        <p style="margin-top: 20px; font-size: 9pt; color: var(--text-muted);">
+          tariqlabs.com<br>
+          Instagram, LinkedIn, YouTube: @tariqelouzeh
+        </p>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>The Valley Between Us</span>
+      <span>Page 3</span>
+    </div>
+  </div>
+
+  <!-- ============ PAGE 4: DIRECTOR'S STATEMENT ============ -->
+  <div class="page">
+    <div class="page-header">
+      <span class="film-name">The Valley Between Us</span>
+      <span class="page-label">Press Kit</span>
+    </div>
+
+    <p class="section-kicker">Director's Statement</p>
+    <h2 class="section-title">Why This Film</h2>
+
+    <div class="divider"></div>
+
+    <p>I didn't set out to make a film. I set out to understand something I'd been circling for years as an engineer, and as someone who spends his time trying to explain hard things to other people. Why does it seem to matter so much where you build?</p>
+
+    <p>You can read every essay on product-market fit. You can watch every pitch deck teardown on YouTube. I have. Some of them I've probably made. But none of that fully explains what happens to a founder when you take them out of their home country and drop them into a hacker house in San Francisco with four other teams, all under the same pressure, the same deadline, the same unblinking proximity to investors who've seen a thousand pitches before theirs.</p>
+
+    <p>That's the question <em>The Valley Between Us</em> tries to answer, not with argument, but with observation. Five teams, from Morocco, Egypt, Tunisia, and Jordan. Eight weeks. One house. I wanted to watch the distance between what founders think they're building and what they end up building close in real time, not because someone told them to pivot, but because the room itself demanded it.</p>
+
+    <p>As a first-time filmmaker, I brought the instincts I trust most. Get close to the people doing the work. Resist the urge to over-explain. Trust that the audience, like my audience of developers back home, is smart enough to sit with nuance. This isn't a film about Silicon Valley as a place. It's about the valley between where these founders started and who they became, and whether that gap can only be closed by being there.</p>
+
+    <div class="page-footer">
+      <span>The Valley Between Us</span>
+      <span>Page 4</span>
+    </div>
+  </div>
+
+  <!-- ============ PAGE 5: STILLS ============ -->
+  <div class="page">
+    <div class="page-header">
+      <span class="film-name">The Valley Between Us</span>
+      <span class="page-label">Press Kit</span>
+    </div>
+
+    <p class="section-kicker">Stills</p>
+    <h2 class="section-title">From the Film</h2>
+
+    <div class="divider"></div>
+
+    <div class="stills-grid">
+      <img src="../images/kernel1.jpg" alt="Still from The Valley Between Us" />
+      <img src="../images/kernel4.jpg" alt="Still from The Valley Between Us" />
+      <img src="../images/kernel5.jpg" alt="Still from The Valley Between Us" />
+      <img src="../images/kernel6.jpg" alt="Still from The Valley Between Us" />
+      <img src="../images/kernel7.jpg" alt="Still from The Valley Between Us" />
+      <img src="../images/kernel8.jpg" alt="Still from The Valley Between Us" />
+    </div>
+
+    <div class="page-footer">
+      <span>The Valley Between Us</span>
+      <span>Page 5</span>
+    </div>
+  </div>
+
+  <!-- ============ PAGE 6: CREDITS + CONTACT ============ -->
+  <div class="page">
+    <div class="page-header">
+      <span class="film-name">The Valley Between Us</span>
+      <span class="page-label">Press Kit</span>
+    </div>
+
+    <p class="section-kicker">Credits</p>
+    <h2 class="section-title">Production</h2>
+
+    <div class="divider"></div>
+
+    <dl class="credits-list">
+      <div class="credits-row">
+        <dt>Directed by</dt>
+        <dd>Tariq Elouzeh</dd>
+      </div>
+      <div class="credits-row">
+        <dt>Produced by</dt>
+        <dd>Tariq Elouzeh</dd>
+      </div>
+      <div class="credits-row">
+        <dt>Cinematography</dt>
+        <dd>Tariq Elouzeh</dd>
+      </div>
+      <div class="credits-row">
+        <dt>Editing</dt>
+        <dd>Tariq Elouzeh</dd>
+      </div>
+      <div class="credits-row">
+        <dt>Music</dt>
+        <dd>Mamoun Rebiai</dd>
+      </div>
+    </dl>
+
+    <div class="contact-block">
+      <p class="kicker">Contact for Press, Festivals, and Screenings</p>
+      <p class="email">support@tariqlabs.com</p>
+
+      <div class="contact-links">
+        Website: <a href="https://thevalleybetweenus.com">thevalleybetweenus.com</a><br>
+        Trailer: <a href="https://www.youtube.com/watch?v=BmzX-7a65Iw">youtube.com/watch?v=BmzX-7a65Iw</a><br>
+        Director: <a href="https://tariqlabs.com">tariqlabs.com</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>&copy; 2026 Tariq Elouzeh</span>
+      <span>Page 6</span>
+    </div>
+  </div>
+
+</body>
+</html>
